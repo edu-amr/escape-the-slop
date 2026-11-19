@@ -9,7 +9,7 @@ para React e Tailwind que fogem do visual genérico.
 
 [Ver o site](https://escape-the-slop.vercel.app) · [Sugerir uma biblioteca](https://github.com/edu-amr/escape-the-slop/issues/new?template=nova-biblioteca.yml) · [Contribuir](CONTRIBUTING.md)
 
-by [riivo](https://riivo.com.br)
+by [riivo](https://riivo.com.br) · Licença [MIT](LICENSE)
 
 </div>
 
@@ -118,6 +118,11 @@ public/         prévias, bandeiras e ícones
 - **Imports** ordenados automaticamente (`simple-import-sort`) e **classes do Tailwind** ordenadas
   e checadas contra duplicadas e conflitantes.
 - **CI** no GitHub Actions: lint, formatação, tipos, validação das bibliotecas e build.
+
+## Licença
+
+Código sob a [licença MIT](LICENSE). Pode usar, copiar e modificar à vontade.
+O conteúdo de terceiros abaixo mantém as licenças originais.
 
 ## Licenças de terceiros
 

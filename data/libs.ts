@@ -288,6 +288,18 @@ export const LIBS: Lib[] = [
     url: "https://awesomeshadcn.dev/",
     category: "resources",
   },
+  {
+    slug: "storytale",
+    name: "Storytale",
+    url: "https://storytale.io/browse/?isFree=true",
+    category: "resources",
+  },
+  {
+    slug: "shots",
+    name: "Shots",
+    url: "https://shots.so/",
+    category: "resources",
+  },
 ];
 
 export const CATEGORY_KEYS: CategoryKey[] = [

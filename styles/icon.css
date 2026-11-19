@@ -1,0 +1,9 @@
+/* in the base layer, so a utility on an icon (its colour, `hidden`) wins over these defaults */
+@layer base {
+  .ui-icon {
+    flex-shrink: 0;
+    color: inherit;
+    vertical-align: middle;
+    user-select: none;
+  }
+}

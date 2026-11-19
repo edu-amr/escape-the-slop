@@ -101,7 +101,7 @@ export function HubPage({ locale }: { locale: Locale }) {
           <LangSwitch locale={locale} dict={dict} />
         </div>
         <header className="mt-10 mb-10 max-sm:mt-8 max-sm:mb-7">
-          <h1 className="m-0 font-[family-name:var(--font-display)] text-[40px] leading-[0.95] font-extrabold tracking-normal text-ink sm:text-[60px]">
+          <h1 className="m-0 font-[family-name:var(--font-display)] text-[50px] leading-[0.95] font-black tracking-[-0.04em] text-ink sm:text-[70px]">
             {dict.title}
           </h1>
           <p className="mt-3 max-w-[56ch] text-[17px] leading-6 text-ink-secondary">

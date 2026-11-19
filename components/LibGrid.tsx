@@ -35,7 +35,7 @@ export function LibGrid({
           aria-label={dict.filter}
           value={category}
           onValueChange={(value) => setCategory(value as "all" | CategoryKey)}
-          className="h-auto max-w-full flex-wrap rounded-2xl"
+          className="h-auto max-w-full flex-wrap rounded-2xl bg-[#ececec]/65"
         >
           <SegmentedItem value="all">{dict.all}</SegmentedItem>
           {CATEGORY_KEYS.map((key) => (

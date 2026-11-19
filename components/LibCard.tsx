@@ -16,7 +16,7 @@ export function LibCard({ lib, dict }: { lib: Lib; dict: Dictionary }) {
       target="_blank"
       rel="noopener"
       aria-label={`${lib.name} (${dict.newTab})`}
-      className="group flex flex-col rounded-2xl bg-ink/[0.06] p-1 outline-none transition-[translate,box-shadow] duration-200 ease-out hover:-translate-y-0.5 hover:shadow-[0_10px_24px_-12px_rgb(0_0_0/0.25)] focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-focus motion-reduce:transition-none motion-reduce:hover:translate-y-0"
+      className="group flex flex-col rounded-2xl bg-[#ececec]/65 p-1 outline-none transition-[translate,box-shadow] duration-200 ease-out hover:-translate-y-0.5 hover:shadow-[0_10px_24px_-12px_rgb(0_0_0/0.25)] focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-focus motion-reduce:transition-none motion-reduce:hover:translate-y-0"
     >
       <div className="flex min-h-12 items-center justify-between gap-3 px-3 py-2.5">
         <div className="min-w-0">
@@ -27,7 +27,7 @@ export function LibCard({ lib, dict }: { lib: Lib; dict: Dictionary }) {
             {hostOf(lib.url)}
           </p>
         </div>
-        <span className="grid size-7 shrink-0 place-items-center rounded-full bg-ink/[0.06] text-ink-secondary transition-colors duration-200 group-hover:bg-ink group-hover:text-app">
+        <span className="grid size-7 shrink-0 place-items-center rounded-full bg-[#e0e0e0]/65 text-ink-secondary transition-colors duration-200 group-hover:bg-ink group-hover:text-app">
           <Icon name="link-external" size={14} />
         </span>
       </div>

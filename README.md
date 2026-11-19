@@ -56,7 +56,7 @@ Abra <http://localhost:3000>.
 | ---------------------- | --------------------------------------------------------------------- | ------------------------------------ |
 | `NEXT_PUBLIC_SITE_URL` | URL pública do site (canonical, sitemap, Open Graph, `llms.txt`, SEO) | `https://escape-the-slop.vercel.app` |
 
-Defina essa variável com o domínio real antes de publicar.
+Copie `.env.example` para `.env.local` para desenvolver. Na Vercel, defina a variável em Settings → Environment Variables com o domínio real (a barra final é ignorada).
 
 ## Scripts
 

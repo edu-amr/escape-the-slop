@@ -1,3 +1,6 @@
+import { readFile } from "node:fs/promises";
+import { join } from "node:path";
+
 import { ImageResponse } from "next/og";
 
 import { DICTIONARIES } from "@/data/i18n";
@@ -5,8 +8,9 @@ import { type Locale, SITE_NAME } from "@/lib/site";
 
 export const OG_SIZE = { width: 1200, height: 630 };
 
-export function ogImage(locale: Locale) {
+export async function ogImage(locale: Locale) {
   const dict = DICTIONARIES[locale];
+  const logo = `data:image/png;base64,${(await readFile(join(process.cwd(), "app", "icon.png"))).toString("base64")}`;
   return new ImageResponse(
     <div
       style={{
@@ -21,7 +25,19 @@ export function ogImage(locale: Locale) {
         fontFamily: "sans-serif",
       }}
     >
-      <div style={{ fontSize: 30, color: "#6b6b6b" }}>by riivo</div>
+      <div
+        style={{
+          display: "flex",
+          alignItems: "center",
+          gap: 18,
+          fontSize: 30,
+          color: "#6b6b6b",
+        }}
+      >
+        {/* eslint-disable-next-line @next/next/no-img-element */}
+        <img src={logo} width={64} height={64} alt="" />
+        <span>by riivo</span>
+      </div>
       <div style={{ display: "flex", flexDirection: "column", gap: 24 }}>
         <div
           style={{

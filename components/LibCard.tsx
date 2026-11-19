@@ -1,7 +1,6 @@
 import { existsSync } from "node:fs";
 import { join } from "node:path";
 
-import { Icon } from "@/components/Icon";
 import type { Dictionary } from "@/data/i18n";
 import { hostOf, type Lib } from "@/data/libs";
 
@@ -27,9 +26,20 @@ export function LibCard({ lib, dict }: { lib: Lib; dict: Dictionary }) {
             {hostOf(lib.url)}
           </p>
         </div>
-        <span className="grid size-7 shrink-0 place-items-center rounded-full bg-[#e0e0e0]/65 text-ink-secondary transition-colors duration-200 group-hover:bg-ink group-hover:text-app">
-          <Icon name="link-external" size={14} />
-        </span>
+        <svg
+          viewBox="0 0 24 24"
+          width={24}
+          height={24}
+          fill="none"
+          stroke="currentColor"
+          strokeWidth={2.4}
+          strokeLinecap="round"
+          strokeLinejoin="round"
+          aria-hidden="true"
+          className="shrink-0 text-blue-500 transition-colors duration-200 group-hover:text-blue-700"
+        >
+          <path d="M7 17 17 7M8 7h9v9" />
+        </svg>
       </div>
       <div className="relative h-[260px] overflow-hidden rounded-xl bg-white inset-ring-[0.5px] inset-ring-ink/10">
         {hasPreview ? (

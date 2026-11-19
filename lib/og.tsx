@@ -1,7 +1,7 @@
 import { ImageResponse } from "next/og";
 
 import { DICTIONARIES } from "@/data/i18n";
-import { SITE_NAME, type Locale } from "@/lib/site";
+import { type Locale, SITE_NAME } from "@/lib/site";
 
 export const OG_SIZE = { width: 1200, height: 630 };
 

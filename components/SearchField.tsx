@@ -1,11 +1,5 @@
-import {
-  type ComponentProps,
-  type KeyboardEvent,
-  type ReactNode,
-  useState,
-} from "react";
+import { type ComponentProps, type KeyboardEvent, type ReactNode, useState } from "react";
 
-import { Icon } from "@/components/Icon";
 import {
   InputGroup,
   InputGroupAddon,
@@ -13,6 +7,7 @@ import {
   InputGroupInput,
 } from "@/components/Field";
 import type { FieldSize } from "@/components/field-surface";
+import { Icon } from "@/components/Icon";
 import { cn } from "@/lib/cn";
 
 const searchStyles = {
@@ -76,9 +71,7 @@ export function SearchField({
       className={cn(searchStyles.root, className)}
     >
       <InputGroupAddon>
-        {leading ?? (
-          <Icon name="search" size={14} className={searchStyles.icon} />
-        )}
+        {leading ?? <Icon name="search" size={14} className={searchStyles.icon} />}
       </InputGroupAddon>
       <InputGroupInput
         type="search"

@@ -1,10 +1,6 @@
+import { animate, type MotionValue, useMotionValue, useTransform } from "motion/react";
 import { useLayoutEffect, useRef } from "react";
-import {
-  animate,
-  useMotionValue,
-  useTransform,
-  type MotionValue,
-} from "motion/react";
+
 import { SPRING } from "./motion-presets";
 
 /** A highlight that stretches between two edges: the edge facing the move runs on the stiff lead spring and the other

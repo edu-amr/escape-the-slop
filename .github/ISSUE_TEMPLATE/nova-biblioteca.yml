@@ -1,0 +1,49 @@
+name: Sugerir uma biblioteca
+description: Indique uma biblioteca de UI com personalidade para entrar na lista.
+title: "feat: adiciona a biblioteca "
+labels: ["nova-biblioteca"]
+body:
+  - type: input
+    id: nome
+    attributes:
+      label: Nome
+    validations:
+      required: true
+  - type: input
+    id: url
+    attributes:
+      label: Endereço do site
+      placeholder: https://
+    validations:
+      required: true
+  - type: dropdown
+    id: categoria
+    attributes:
+      label: Categoria
+      options:
+        - Componentes
+        - Blocos
+        - Animações
+        - Gráficos
+        - Ícones
+        - Recursos
+    validations:
+      required: true
+  - type: textarea
+    id: motivo
+    attributes:
+      label: Por que ela foge do visual genérico?
+      description: Em poucas linhas, o que dá identidade a ela.
+    validations:
+      required: true
+  - type: dropdown
+    id: licenca
+    attributes:
+      label: Licença
+      options:
+        - Open source (MIT, Apache etc.)
+        - Gratuita, com restrições
+        - Paga
+        - Não sei
+    validations:
+      required: true

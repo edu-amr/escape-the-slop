@@ -259,6 +259,12 @@ export const LIBS: Lib[] = [
     category: "icons",
   },
   {
+    slug: "hugeicons",
+    name: "Hugeicons",
+    url: "https://hugeicons.com/icons/stroke-rounded",
+    category: "icons",
+  },
+  {
     slug: "ant-design",
     name: "Ant Design",
     url: "https://ant.design/components/overview",

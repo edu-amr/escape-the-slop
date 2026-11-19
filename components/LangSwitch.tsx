@@ -8,13 +8,7 @@ import {
 } from "@/components/DropdownMenu";
 import { Icon } from "@/components/Icon";
 import type { Dictionary } from "@/data/i18n";
-import {
-  HTML_LANG,
-  LOCALES,
-  pathFor,
-  SWITCH_LABEL,
-  type Locale,
-} from "@/lib/site";
+import { HTML_LANG, type Locale, LOCALES, pathFor, SWITCH_LABEL } from "@/lib/site";
 
 const FLAG: Record<Locale, string> = {
   "pt-br": "/flags/br.svg",
@@ -38,25 +32,19 @@ function Flag({ locale }: { locale: Locale }) {
       width={20}
       height={15}
       draggable={false}
-      className="h-[15px] w-5 shrink-0 max-w-none rounded-[3px] object-cover inset-ring-[0.5px] inset-ring-ink/15"
+      className="h-[15px] w-5 max-w-none shrink-0 rounded-[3px] object-cover inset-ring-[0.5px] inset-ring-ink/15"
     />
   );
 }
 
-export function LangSwitch({
-  locale,
-  dict,
-}: {
-  locale: Locale;
-  dict: Dictionary;
-}) {
+export function LangSwitch({ locale, dict }: { locale: Locale; dict: Dictionary }) {
   return (
     <DropdownMenu>
       <DropdownMenuTrigger asChild>
         <button
           type="button"
           aria-label={`${dict.language}: ${NAME[locale]}`}
-          className="inline-flex h-9 cursor-pointer items-center gap-2 rounded-full bg-ink/[0.06] ps-3 pe-2.5 text-[13px] text-ink outline-none transition-colors duration-150 hover:bg-ink/10 focus-visible:outline-2 focus-visible:outline-focus data-[state=open]:bg-ink/10"
+          className="inline-flex h-9 cursor-pointer items-center gap-2 rounded-full bg-ink/[0.06] ps-3 pe-2.5 text-[13px] text-ink transition-colors duration-150 outline-none hover:bg-ink/10 focus-visible:outline-2 focus-visible:outline-focus data-[state=open]:bg-ink/10"
         >
           <Flag locale={locale} />
           <span>{SWITCH_LABEL[locale]}</span>

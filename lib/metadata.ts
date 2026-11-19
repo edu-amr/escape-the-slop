@@ -4,12 +4,12 @@ import { DICTIONARIES } from "@/data/i18n";
 import {
   AUTHOR,
   HTML_LANG,
+  type Locale,
   LOCALES,
   OG_LOCALE,
   SITE_NAME,
   SITE_URL,
   urlFor,
-  type Locale,
 } from "@/lib/site";
 
 export function buildMetadata(locale: Locale): Metadata {

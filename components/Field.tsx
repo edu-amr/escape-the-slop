@@ -1,17 +1,16 @@
 import { type ComponentProps, type ReactNode, useId, useState } from "react";
 
-import { Icon } from "@/components/Icon";
-import { cn } from "@/lib/cn";
-
 import {
   FieldContext,
   type FieldSize,
   fieldSurface,
   useField,
 } from "@/components/field-surface";
+import { Icon } from "@/components/Icon";
+import { cn } from "@/lib/cn";
 
 export { Textarea } from "@/components/Textarea";
-export { FieldContext, fieldSurface, useField, type FieldSize };
+export { FieldContext, type FieldSize, fieldSurface, useField };
 
 const fieldStyles = {
   input:
@@ -135,8 +134,7 @@ export function Input({
       required={required ?? field.required}
       aria-invalid={isInvalid || undefined}
       aria-describedby={
-        describedBy ??
-        (field.hintId && field.invalid ? field.hintId : undefined)
+        describedBy ?? (field.hintId && field.invalid ? field.hintId : undefined)
       }
       className={cn(
         variant === "boxed"
@@ -187,11 +185,7 @@ export function FieldHint({
       data-slot="field-hint"
       id={id ?? field.hintId}
       data-invalid={isInvalid || undefined}
-      className={cn(
-        fieldStyles.hint,
-        isInvalid && fieldStyles.hintInvalid,
-        className,
-      )}
+      className={cn(fieldStyles.hint, isInvalid && fieldStyles.hintInvalid, className)}
       {...props}
     />
   );
@@ -254,14 +248,9 @@ export function InputGroupInput({
       required={required ?? field.required}
       aria-invalid={field.invalid || undefined}
       aria-describedby={
-        describedBy ??
-        (field.hintId && field.invalid ? field.hintId : undefined)
+        describedBy ?? (field.hintId && field.invalid ? field.hintId : undefined)
       }
-      className={cn(
-        fieldSurface.bare,
-        fieldSurface.bareSize[field.size],
-        className,
-      )}
+      className={cn(fieldSurface.bare, fieldSurface.bareSize[field.size], className)}
       {...props}
     />
   );
@@ -286,10 +275,7 @@ export function InputGroupAddon({
   );
 }
 
-export function InputGroupText({
-  className,
-  ...props
-}: ComponentProps<"span">) {
+export function InputGroupText({ className, ...props }: ComponentProps<"span">) {
   return (
     <span
       data-slot="input-group-text"

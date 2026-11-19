@@ -1,17 +1,10 @@
-import PixelBlast from "@/components/PixelBlast";
 import { LangSwitch } from "@/components/LangSwitch";
 import { LibCard } from "@/components/LibCard";
 import { LibGrid } from "@/components/LibGrid";
+import PixelBlast from "@/components/PixelBlast";
 import { DICTIONARIES } from "@/data/i18n";
 import { LIBS } from "@/data/libs";
-import {
-  AUTHOR,
-  HTML_LANG,
-  SITE_NAME,
-  SITE_URL,
-  urlFor,
-  type Locale,
-} from "@/lib/site";
+import { AUTHOR, HTML_LANG, type Locale, SITE_NAME, SITE_URL, urlFor } from "@/lib/site";
 
 export function HubPage({ locale }: { locale: Locale }) {
   const dict = DICTIONARIES[locale];
@@ -59,7 +52,7 @@ export function HubPage({ locale }: { locale: Locale }) {
     <div className="relative isolate overflow-x-clip">
       <div
         aria-hidden="true"
-        className="pointer-events-none absolute inset-x-0 top-0 -z-10 h-[440px] opacity-40 [mask-image:linear-gradient(to_bottom,black_70%,transparent)]"
+        className="pointer-events-none absolute inset-x-0 top-0 -z-10 h-[440px] [mask-image:linear-gradient(to_bottom,black_70%,transparent)] opacity-40"
       >
         <PixelBlast
           variant="square"
@@ -85,7 +78,7 @@ export function HubPage({ locale }: { locale: Locale }) {
             href={AUTHOR.url}
             target="_blank"
             rel="noopener"
-            className="inline-flex items-center gap-2 rounded-full py-1 pe-3 ps-1 text-[14px] text-ink-secondary no-underline outline-none transition-colors duration-150 hover:text-ink focus-visible:outline-2 focus-visible:outline-focus"
+            className="inline-flex items-center gap-2 rounded-full py-1 ps-1 pe-3 text-[14px] text-ink-secondary no-underline transition-colors duration-150 outline-none hover:text-ink focus-visible:outline-2 focus-visible:outline-focus"
           >
             <img
               src="/riivo-dog.webp"

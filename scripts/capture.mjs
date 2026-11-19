@@ -1,7 +1,8 @@
-import { chromium } from "playwright-core";
 import { existsSync, readdirSync } from "node:fs";
 import { homedir } from "node:os";
 import { join } from "node:path";
+
+import { chromium } from "playwright-core";
 
 import { LIBS } from "../data/libs.ts";
 
@@ -26,9 +27,7 @@ function findChromium() {
 const only = process.argv.slice(2);
 const browser = await chromium.launch({ executablePath: findChromium() });
 const page = await browser.newPage({ viewport: { width: 1280, height: 1000 } });
-for (const lib of LIBS.filter(
-  (item) => !only.length || only.includes(item.slug),
-)) {
+for (const lib of LIBS.filter((item) => !only.length || only.includes(item.slug))) {
   try {
     await page.goto(lib.url, { waitUntil: "load", timeout: 45000 });
     await page.waitForTimeout(lib.wait ?? 2500);

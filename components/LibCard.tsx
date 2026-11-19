@@ -16,7 +16,7 @@ export function LibCard({ lib, dict }: { lib: Lib; dict: Dictionary }) {
       target="_blank"
       rel="noopener"
       aria-label={`${lib.name} (${dict.newTab})`}
-      className="group flex flex-col rounded-2xl bg-[#ececec]/65 p-1 outline-none transition-[translate,box-shadow] duration-200 ease-out hover:-translate-y-0.5 hover:shadow-[0_10px_24px_-12px_rgb(0_0_0/0.25)] focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-focus motion-reduce:transition-none motion-reduce:hover:translate-y-0"
+      className="group flex flex-col rounded-2xl bg-[#ececec]/65 p-1 transition-[translate,box-shadow] duration-200 ease-out outline-none hover:-translate-y-0.5 hover:shadow-[0_10px_24px_-12px_rgb(0_0_0/0.25)] focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-focus motion-reduce:transition-none motion-reduce:hover:translate-y-0"
     >
       <div className="flex min-h-12 items-center justify-between gap-3 px-3 py-2.5">
         <div className="min-w-0">
@@ -49,9 +49,7 @@ export function LibCard({ lib, dict }: { lib: Lib; dict: Dictionary }) {
               <p className="m-0 text-[22px] font-medium tracking-[-0.03em] text-ink">
                 {lib.name}
               </p>
-              <p className="m-0 mt-1 text-[12px] text-ink-secondary">
-                {dict.noPreview}
-              </p>
+              <p className="m-0 mt-1 text-[12px] text-ink-secondary">{dict.noPreview}</p>
             </div>
           </div>
         )}

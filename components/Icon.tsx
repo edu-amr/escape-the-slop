@@ -1,7 +1,8 @@
+import "../styles/icon.css";
+
 import type { CSSProperties } from "react";
 
 import { cn } from "../lib/cn";
-import "../styles/icon.css";
 import { SOLAR_ICONS } from "./icons/icon-table";
 
 /** The app's named icons. Names stay stable so callers and stored ids never change. */

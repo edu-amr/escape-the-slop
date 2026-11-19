@@ -1,12 +1,7 @@
 import { type ComponentProps, useLayoutEffect, useRef } from "react";
 
+import { type FieldSize, fieldSurface, useField } from "@/components/field-surface";
 import { cn } from "@/lib/cn";
-
-import {
-  type FieldSize,
-  fieldSurface,
-  useField,
-} from "@/components/field-surface";
 
 const textareaStyles = {
   bare: "block w-full resize-none rounded-[10px] border border-transparent bg-transparent px-[9px] py-[7px] text-[13px] leading-[18px] tracking-[0.195px] text-ink outline-none [scrollbar-width:thin] placeholder:text-ink/40 disabled:opacity-50",
@@ -66,10 +61,7 @@ export function Textarea({
       parseFloat(getComputedStyle(element).paddingBottom);
     const ceiling = maxRows ? maxRows * line + padding : Infinity;
     element.style.height = "0px";
-    const natural = Math.max(
-      element.scrollHeight,
-      (lineRows ?? 1) * line + padding,
-    );
+    const natural = Math.max(element.scrollHeight, (lineRows ?? 1) * line + padding);
     element.style.height = `${Math.min(natural, ceiling)}px`;
     element.style.overflowY = natural > ceiling ? "auto" : "hidden";
   };
@@ -92,8 +84,7 @@ export function Textarea({
       required={required ?? field.required}
       aria-invalid={isInvalid || undefined}
       aria-describedby={
-        describedBy ??
-        (field.hintId && field.invalid ? field.hintId : undefined)
+        describedBy ?? (field.hintId && field.invalid ? field.hintId : undefined)
       }
       onInput={(event) => {
         fit();
@@ -109,9 +100,7 @@ export function Textarea({
             ]
           : [textareaStyles.bare, isInvalid && textareaStyles.bareInvalid],
         textareaStyles.resize[
-          autoResize
-            ? "none"
-            : (resize ?? (variant === "boxed" ? "vertical" : "none"))
+          autoResize ? "none" : (resize ?? (variant === "boxed" ? "vertical" : "none"))
         ],
         className,
       )}

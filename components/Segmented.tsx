@@ -83,8 +83,7 @@ export function Segmented({
     place();
     const mutations = new MutationObserver(place);
     mutations.observe(root, { childList: true, subtree: true });
-    if (typeof ResizeObserver === "undefined")
-      return () => mutations.disconnect();
+    if (typeof ResizeObserver === "undefined") return () => mutations.disconnect();
     const watch = new ResizeObserver(place);
     watch.observe(root);
     return () => {

@@ -11,11 +11,7 @@ export function generateStaticParams() {
   return LOCALES.map((lang) => ({ lang }));
 }
 
-export default async function Image({
-  params,
-}: {
-  params: Promise<{ lang: string }>;
-}) {
+export default async function Image({ params }: { params: Promise<{ lang: string }> }) {
   const { lang } = await params;
   if (!isLocale(lang)) notFound();
   return ogImage(lang);

@@ -137,9 +137,7 @@ export function dialogMotion(reduced: boolean) {
       animate: {
         opacity: 1,
         transform: reduced ? "none" : "scale(1)",
-        transition: reduced
-          ? REDUCED
-          : { duration: DURATION.base, ease: EASE_OUT },
+        transition: reduced ? REDUCED : { duration: DURATION.base, ease: EASE_OUT },
       },
       exit: {
         opacity: 0,
@@ -151,9 +149,7 @@ export function dialogMotion(reduced: boolean) {
       initial: { opacity: 0 },
       animate: {
         opacity: 1,
-        transition: reduced
-          ? REDUCED
-          : { duration: BENCHO.dur.fast, ease: EASE_OUT },
+        transition: reduced ? REDUCED : { duration: BENCHO.dur.fast, ease: EASE_OUT },
       },
       exit: { opacity: 0, transition: reduced ? REDUCED : leave },
     },

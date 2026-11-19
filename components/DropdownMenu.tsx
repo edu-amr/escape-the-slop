@@ -1,6 +1,7 @@
 import { DropdownMenu as DropdownMenuPrimitive } from "radix-ui";
 import type { ComponentProps } from "react";
 
+import { Icon } from "@/components/Icon";
 import { cn } from "@/lib/cn";
 import {
   MENU_GUTTER,
@@ -10,8 +11,6 @@ import {
   MENU_SHEET,
   MENU_TRAILING,
 } from "@/lib/menu-recipe";
-
-import { Icon } from "@/components/Icon";
 
 const menuStyles = {
   content: [
@@ -53,9 +52,7 @@ export function DropdownMenuContent({
   );
 }
 
-export type DropdownMenuItemProps = ComponentProps<
-  typeof DropdownMenuPrimitive.Item
-> & {
+export type DropdownMenuItemProps = ComponentProps<typeof DropdownMenuPrimitive.Item> & {
   variant?: "default" | "danger";
 };
 
@@ -77,10 +74,7 @@ export function DropdownMenuItem({
   );
 }
 
-export function DropdownMenuIcon({
-  className,
-  ...props
-}: ComponentProps<"span">) {
+export function DropdownMenuIcon({ className, ...props }: ComponentProps<"span">) {
   return (
     <span
       data-slot="dropdown-menu-icon"
@@ -167,11 +161,7 @@ export function DropdownMenuSubTrigger({
   return (
     <DropdownMenuPrimitive.SubTrigger
       data-slot="dropdown-menu-sub-trigger"
-      className={cn(
-        menuStyles.item,
-        "data-[state=open]:bg-menu-hover",
-        className,
-      )}
+      className={cn(menuStyles.item, "data-[state=open]:bg-menu-hover", className)}
       {...props}
     >
       {children}

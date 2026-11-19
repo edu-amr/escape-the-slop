@@ -1,8 +1,8 @@
 import {
+  type HTMLMotionProps,
   isMotionValue,
   motion,
   useReducedMotion,
-  type HTMLMotionProps,
 } from "motion/react";
 
 /** The app's reduced-motion choice or the system's. */
@@ -29,8 +29,7 @@ const MOTION_PROPS = [
 
 /** motion measures and listens on a real window; rendered to a string there is none, so the element draws at rest. */
 const live = () =>
-  typeof window !== "undefined" &&
-  typeof window.addEventListener === "function";
+  typeof window !== "undefined" && typeof window.addEventListener === "function";
 
 function rest<P extends object>(props: P): P {
   const plain = { ...props } as Record<string, unknown>;

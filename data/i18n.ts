@@ -25,7 +25,7 @@ export const DICTIONARIES: Record<Locale, Dictionary> = {
     by: "by",
     language: "Idioma",
     title: "Escape the Slop",
-    lede: "Bibliotecas de UI com personalidade. Zero cara de IA, zero gradiente roxo, zero card igual a todos os outros.",
+    lede: "Tudo que você precisa para um front-end que não parece feito por IA. Componentes, animações, ícones, ilustrações e mais: bibliotecas com personalidade, sem gradiente roxo e sem card igual a todos os outros.",
     all: "Todas",
     categories: {
       components: "Componentes",
@@ -47,7 +47,7 @@ export const DICTIONARIES: Record<Locale, Dictionary> = {
     seo: {
       title: "Escape the Slop — Bibliotecas de UI sem cara de IA",
       description:
-        "Curadoria de bibliotecas de UI para React e Tailwind com personalidade: componentes, blocos, animações, gráficos e ícones para fugir do visual genérico de IA.",
+        "Curadoria de bibliotecas de UI para React e Tailwind com personalidade: componentes, blocos, animações, gráficos, ícones e ilustrações para fugir do visual genérico de IA.",
       keywords: [
         "bibliotecas de UI",
         "componentes React",
@@ -64,7 +64,7 @@ export const DICTIONARIES: Record<Locale, Dictionary> = {
     by: "by",
     language: "Language",
     title: "Escape the Slop",
-    lede: "UI libraries with personality. Zero AI look, zero purple gradients, zero cookie-cutter cards.",
+    lede: "Everything you need for a front-end that doesn't look made by AI. Components, animations, icons, illustrations and more: libraries with personality, no purple gradients and no cookie-cutter cards.",
     all: "All",
     categories: {
       components: "Components",
@@ -86,7 +86,7 @@ export const DICTIONARIES: Record<Locale, Dictionary> = {
     seo: {
       title: "Escape the Slop — UI libraries that don't look like AI",
       description:
-        "A curated list of React and Tailwind UI libraries with real personality: components, blocks, animations, charts and icons to escape the generic AI look.",
+        "A curated list of React and Tailwind UI libraries with real personality: components, blocks, animations, charts, icons and illustrations to escape the generic AI look.",
       keywords: [
         "UI libraries",
         "React components",
@@ -103,7 +103,7 @@ export const DICTIONARIES: Record<Locale, Dictionary> = {
     by: "by",
     language: "Langue",
     title: "Escape the Slop",
-    lede: "Des bibliothèques d'UI avec de la personnalité. Zéro look IA, zéro dégradé violet, zéro carte identique aux autres.",
+    lede: "Tout ce qu'il faut pour un front-end qui n'a pas l'air fait par l'IA. Composants, animations, icônes, illustrations et plus : des bibliothèques pleines de personnalité, sans dégradé violet et sans carte identique aux autres.",
     all: "Toutes",
     categories: {
       components: "Composants",
@@ -125,7 +125,7 @@ export const DICTIONARIES: Record<Locale, Dictionary> = {
     seo: {
       title: "Escape the Slop — Des bibliothèques d'UI sans look IA",
       description:
-        "Une sélection de bibliothèques d'UI React et Tailwind pleines de personnalité : composants, blocs, animations, graphiques et icônes pour échapper à l'esthétique générique de l'IA.",
+        "Une sélection de bibliothèques d'UI React et Tailwind pleines de personnalité : composants, blocs, animations, graphiques, icônes et illustrations pour échapper à l'esthétique générique de l'IA.",
       keywords: [
         "bibliothèques d'UI",
         "composants React",
@@ -142,7 +142,7 @@ export const DICTIONARIES: Record<Locale, Dictionary> = {
     by: "by",
     language: "Idioma",
     title: "Escape the Slop",
-    lede: "Bibliotecas de UI con personalidad. Cero aspecto de IA, cero degradados morados, cero tarjetas iguales a todas las demás.",
+    lede: "Todo lo que necesitas para un front-end que no parece hecho por IA. Componentes, animaciones, iconos, ilustraciones y más: bibliotecas con personalidad, sin degradados morados y sin tarjetas iguales a todas las demás.",
     all: "Todas",
     categories: {
       components: "Componentes",
@@ -164,7 +164,7 @@ export const DICTIONARIES: Record<Locale, Dictionary> = {
     seo: {
       title: "Escape the Slop — Bibliotecas de UI sin aspecto de IA",
       description:
-        "Una selección de bibliotecas de UI para React y Tailwind con personalidad: componentes, bloques, animaciones, gráficos e iconos para escapar del aspecto genérico de la IA.",
+        "Una selección de bibliotecas de UI para React y Tailwind con personalidad: componentes, bloques, animaciones, gráficos, iconos e ilustraciones para escapar del aspecto genérico de la IA.",
       keywords: [
         "bibliotecas de UI",
         "componentes React",

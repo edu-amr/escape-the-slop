@@ -2,7 +2,7 @@
   "name": "escape-the-slop",
   "version": "0.1.0",
   "private": true,
-  "description": "Curadoria de bibliotecas de UI com personalidade, para fugir do visual genérico de IA.",
+  "description": "Curadoria de bibliotecas de UI, ícones e ilustrações com personalidade, para fugir do visual genérico de IA.",
   "license": "MIT",
   "type": "module",
   "engines": {

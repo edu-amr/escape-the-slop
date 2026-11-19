@@ -2,10 +2,10 @@
 
 # Escape the Slop
 
-**Bibliotecas de UI com personalidade. Zero cara de IA, zero gradiente roxo, zero card igual a todos os outros.**
+**Tudo que você precisa para um front-end que não parece feito por IA.**
 
-Uma curadoria aberta de bibliotecas de componentes, blocos, animações, gráficos e ícones
-para React e Tailwind que fogem do visual genérico.
+Uma curadoria aberta de bibliotecas de componentes, blocos, animações, gráficos, ícones e ilustrações
+com personalidade, sem gradiente roxo e sem card igual a todos os outros.
 
 [Ver o site](https://escape-the-slop.vercel.app) · [Sugerir uma biblioteca](https://github.com/edu-amr/escape-the-slop/issues/new?template=nova-biblioteca.yml) · [Contribuir](CONTRIBUTING.md)
 

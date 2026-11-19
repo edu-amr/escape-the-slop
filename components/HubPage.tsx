@@ -1,3 +1,4 @@
+import { GithubLink } from "@/components/GithubLink";
 import { LangSwitch } from "@/components/LangSwitch";
 import { LibCard } from "@/components/LibCard";
 import { LibGrid } from "@/components/LibGrid";
@@ -91,7 +92,10 @@ export function HubPage({ locale }: { locale: Locale }) {
               {dict.by}: <span className="font-medium text-ink">riivo</span>
             </span>
           </a>
-          <LangSwitch locale={locale} dict={dict} />
+          <div className="flex items-center gap-2">
+            <GithubLink label={dict.github} />
+            <LangSwitch locale={locale} dict={dict} />
+          </div>
         </div>
         <header className="mt-10 mb-10 max-sm:mt-8 max-sm:mb-7">
           <h1 className="m-0 font-[family-name:var(--font-display)] text-[50px] leading-[0.95] font-black tracking-[-0.04em] text-ink sm:text-[70px]">

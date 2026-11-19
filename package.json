@@ -24,7 +24,7 @@
     "lint:fix": "eslint . --fix",
     "format": "prettier --write .",
     "format:check": "prettier --check .",
-    "typecheck": "tsc --noEmit",
+    "typecheck": "next typegen && tsc --noEmit",
     "check:libs": "node scripts/check-libs.mjs",
     "check": "npm run lint && npm run format:check && npm run typecheck && npm run check:libs",
     "previews": "node scripts/capture.mjs",

@@ -3,6 +3,7 @@ export const SITE_URL = (
 ).replace(/\/$/, "");
 
 export const SITE_NAME = "Escape the Slop";
+export const REPO_URL = "https://github.com/edu-amr/escape-the-slop";
 export const AUTHOR = { name: "riivo", url: "https://riivo.com.br" };
 
 export const LOCALES = ["pt-br", "en", "fr", "es"] as const;

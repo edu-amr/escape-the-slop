@@ -13,6 +13,7 @@ export type Dictionary = {
   searchLabel: string;
   clear: string;
   empty: string;
+  github: string;
   newTab: string;
   preview: string;
   noPreview: string;
@@ -39,6 +40,7 @@ export const DICTIONARIES: Record<Locale, Dictionary> = {
     searchLabel: "Buscar bibliotecas",
     clear: "Limpar busca",
     empty: "Nenhuma biblioteca encontrada.",
+    github: "Ver o código no GitHub",
     newTab: "abre em nova aba",
     preview: "Prévia do site",
     noPreview: "Sem prévia",
@@ -77,6 +79,7 @@ export const DICTIONARIES: Record<Locale, Dictionary> = {
     searchLabel: "Search libraries",
     clear: "Clear search",
     empty: "No libraries found.",
+    github: "View the code on GitHub",
     newTab: "opens in a new tab",
     preview: "Preview of the site",
     noPreview: "No preview",
@@ -115,6 +118,7 @@ export const DICTIONARIES: Record<Locale, Dictionary> = {
     searchLabel: "Rechercher des bibliothèques",
     clear: "Effacer la recherche",
     empty: "Aucune bibliothèque trouvée.",
+    github: "Voir le code sur GitHub",
     newTab: "s'ouvre dans un nouvel onglet",
     preview: "Aperçu du site",
     noPreview: "Pas d'aperçu",
@@ -153,6 +157,7 @@ export const DICTIONARIES: Record<Locale, Dictionary> = {
     searchLabel: "Buscar bibliotecas",
     clear: "Borrar búsqueda",
     empty: "No se encontró ninguna biblioteca.",
+    github: "Ver el código en GitHub",
     newTab: "se abre en una pestaña nueva",
     preview: "Vista previa del sitio",
     noPreview: "Sin vista previa",

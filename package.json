@@ -25,9 +25,9 @@
     "format": "prettier --write .",
     "format:check": "prettier --check .",
     "typecheck": "next typegen && tsc --noEmit",
-    "check:libs": "node scripts/check-libs.mjs",
+    "check:libs": "tsx scripts/check-libs.mjs",
     "check": "npm run lint && npm run format:check && npm run typecheck && npm run check:libs",
-    "previews": "node scripts/capture.mjs",
+    "previews": "tsx scripts/capture.mjs",
     "prepare": "husky"
   },
   "lint-staged": {
@@ -68,6 +68,7 @@
     "prettier": "^3.10.1",
     "prettier-plugin-tailwindcss": "^0.8.1",
     "tailwindcss": "4.3.3",
+    "tsx": "^4.23.15",
     "typescript": "^5"
   }
 }

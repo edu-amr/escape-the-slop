@@ -414,6 +414,24 @@ export const LIBS: Lib[] = [
     url: "https://ruixen.com/",
     category: "components",
   },
+  {
+    slug: "bencho",
+    name: "Bencho",
+    url: "https://bencho.dev/",
+    category: "components",
+  },
+  {
+    slug: "audiocn",
+    name: "AudioCN",
+    url: "https://www.audiocn.dev/",
+    category: "components",
+  },
+  {
+    slug: "termcn",
+    name: "TermCN",
+    url: "https://www.termcn.dev/",
+    category: "components",
+  },
 ];
 
 export const CATEGORY_KEYS: CategoryKey[] = [

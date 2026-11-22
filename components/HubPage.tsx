@@ -67,7 +67,7 @@ export function HubPage({ locale }: { locale: Locale }) {
           lightMode
         />
       </div>
-      <main className="relative mx-auto w-full max-w-[1120px] px-6 pt-6 pb-24 max-sm:px-4">
+      <main className="relative w-full px-6 pt-6 pb-24 max-sm:px-4 min-[1600px]:px-10">
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{

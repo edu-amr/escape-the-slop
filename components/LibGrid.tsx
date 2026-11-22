@@ -54,7 +54,7 @@ export function LibGrid({
         />
       </div>
       {visible.length ? (
-        <ul className="m-0 grid list-none grid-cols-3 gap-5 p-0 max-lg:grid-cols-2 max-sm:grid-cols-1">
+        <ul className="m-0 grid list-none grid-cols-[repeat(auto-fill,minmax(min(100%,300px),1fr))] gap-5 p-0">
           {visible.map(({ item, node }) => (
             <li key={item.slug} className="min-w-0">
               {node}

@@ -648,6 +648,18 @@ export const LIBS: Lib[] = [
     url: "https://www.mebius.design/freebies/charts",
     category: "charts",
   },
+  {
+    slug: "ratcn",
+    name: "ratcn",
+    url: "https://ratcn.com/",
+    category: "components",
+  },
+  {
+    slug: "srcl",
+    name: "SRCL",
+    url: "https://www.sacred.computer/",
+    category: "components",
+  },
 ];
 
 export const CATEGORY_KEYS: CategoryKey[] = [

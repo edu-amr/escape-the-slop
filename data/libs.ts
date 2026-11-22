@@ -714,6 +714,30 @@ export const LIBS: Lib[] = [
     url: "https://audio.raphaelsalaja.com/",
     category: "resources",
   },
+  {
+    slug: "design-for-ai",
+    name: "Design for AI",
+    url: "https://design.yaps.ai/pt-br",
+    category: "components",
+  },
+  {
+    slug: "componentry",
+    name: "Componentry",
+    url: "https://componentry.dev/",
+    category: "components",
+  },
+  {
+    slug: "toggle-supply",
+    name: "Toggle Supply",
+    url: "https://www.toggle.supply/",
+    category: "components",
+  },
+  {
+    slug: "toolfolio",
+    name: "Toolfolio",
+    url: "https://toolfolio.com/",
+    category: "resources",
+  },
 ];
 
 export const CATEGORY_KEYS: CategoryKey[] = [

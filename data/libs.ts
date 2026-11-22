@@ -468,6 +468,12 @@ export const LIBS: Lib[] = [
     url: "https://zurisui.com/",
     category: "components",
   },
+  {
+    slug: "open-bot-avatar",
+    name: "Open Bot Avatar",
+    url: "https://dominikscholz.github.io/open-bot-avatar/",
+    category: "resources",
+  },
 ];
 
 export const CATEGORY_KEYS: CategoryKey[] = [

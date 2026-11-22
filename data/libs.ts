@@ -456,6 +456,12 @@ export const LIBS: Lib[] = [
     url: "https://marked.dev/",
     category: "resources",
   },
+  {
+    slug: "ingot-ui",
+    name: "Ingot UI",
+    url: "https://ingotui.com/templates",
+    category: "blocks",
+  },
 ];
 
 export const CATEGORY_KEYS: CategoryKey[] = [

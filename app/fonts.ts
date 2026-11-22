@@ -8,7 +8,7 @@ const generalSans = localFont({
 });
 
 const display = localFont({
-  src: "./fonts/libre-franklin.woff2",
+  src: "./fonts/plaza.woff2",
   weight: "100 900",
   variable: "--font-display",
   display: "swap",

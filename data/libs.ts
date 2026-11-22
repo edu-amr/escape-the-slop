@@ -924,6 +924,78 @@ export const LIBS: Lib[] = [
     url: "https://www.ls.graphics/free-mockups",
     category: "resources",
   },
+  {
+    slug: "uncut",
+    name: "UNCUT.wtf",
+    url: "https://uncut.wtf/",
+    category: "resources",
+  },
+  {
+    slug: "oneworks-avatars",
+    name: "OneWorks Avatars",
+    url: "https://oneworks.cloud/avatar/",
+    category: "resources",
+  },
+  {
+    slug: "torph",
+    name: "Torph",
+    url: "https://torph.lochie.me/",
+    category: "animations",
+  },
+  {
+    slug: "its-hover-icons",
+    name: "itshover Icons",
+    url: "https://www.itshover.com/icons",
+    category: "icons",
+  },
+  {
+    slug: "iconly",
+    name: "Iconly",
+    url: "https://iconly.design/",
+    category: "icons",
+  },
+  {
+    slug: "before-click",
+    name: "Before",
+    url: "https://before.click/",
+    category: "inspiration",
+  },
+  {
+    slug: "icon-museum",
+    name: "Icon Museum",
+    url: "https://icon.museum/",
+    category: "icons",
+  },
+  {
+    slug: "aso-inspo",
+    name: "ASO Inspo",
+    url: "https://www.asoinspo.com/",
+    category: "inspiration",
+  },
+  {
+    slug: "saas-landing-page",
+    name: "SaaS Landing Page",
+    url: "https://saaslandingpage.com/",
+    category: "inspiration",
+  },
+  {
+    slug: "landingfolio",
+    name: "Landingfolio",
+    url: "https://www.landingfolio.com/",
+    category: "inspiration",
+  },
+  {
+    slug: "saaspo",
+    name: "Saaspo",
+    url: "https://saaspo.com/",
+    category: "inspiration",
+  },
+  {
+    slug: "iconinspo",
+    name: "Icon Inspo",
+    url: "https://iconinspo.com/",
+    category: "inspiration",
+  },
 ];
 
 export const CATEGORY_KEYS: CategoryKey[] = [

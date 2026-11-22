@@ -44,11 +44,24 @@ export function LangSwitch({ locale, dict }: { locale: Locale; dict: Dictionary 
         <button
           type="button"
           aria-label={`${dict.language}: ${NAME[locale]}`}
-          className="inline-flex h-9 cursor-pointer items-center gap-2 rounded-full bg-ink/[0.06] ps-3 pe-2.5 text-[13px] text-ink transition-colors duration-150 outline-none hover:bg-ink/10 focus-visible:outline-2 focus-visible:outline-focus data-[state=open]:bg-ink/10"
+          className="inline-flex h-[var(--btn-h)] cursor-pointer items-center gap-2 rounded-[var(--radius)] border border-[var(--tertiary)] bg-[var(--background)] px-3.5 text-[12px] font-medium whitespace-nowrap text-[var(--primary)] no-underline transition-[scale,border-color] duration-150 outline-none hover:border-[var(--secondary)] focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[var(--primary)] active:scale-[0.97] data-[state=open]:border-[var(--secondary)]"
         >
           <Flag locale={locale} />
           <span>{SWITCH_LABEL[locale]}</span>
-          <Icon name="chevron-down" size={12} className="text-ink-secondary" />
+          <svg
+            viewBox="0 0 24 24"
+            width={14}
+            height={14}
+            fill="none"
+            stroke="currentColor"
+            strokeWidth={2.5}
+            strokeLinecap="round"
+            strokeLinejoin="round"
+            aria-hidden="true"
+            className="text-[var(--secondary)]"
+          >
+            <path d="m6 9 6 6 6-6" />
+          </svg>
         </button>
       </DropdownMenuTrigger>
       <DropdownMenuContent align="end" className="min-w-48">

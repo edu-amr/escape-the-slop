@@ -13,6 +13,18 @@ export type Dictionary = {
   searchLabel: string;
   clear: string;
   empty: string;
+  latest: string;
+  az: string;
+  shuffle: string;
+  submit: string;
+  searchOrFilter: string;
+  searchPlaceholder: string;
+  clearAll: string;
+  close: string;
+  hintNavigate: string;
+  hintOpen: string;
+  footerTag: string;
+  footerFade: string;
   github: string;
   newTab: string;
   preview: string;
@@ -41,6 +53,18 @@ export const DICTIONARIES: Record<Locale, Dictionary> = {
     searchLabel: "Buscar bibliotecas",
     clear: "Limpar busca",
     empty: "Nenhuma biblioteca encontrada.",
+    latest: "Recentes",
+    az: "A–Z",
+    shuffle: "Aleatório",
+    submit: "Enviar um site",
+    searchOrFilter: "Buscar ou filtrar",
+    searchPlaceholder: "Buscar bibliotecas, categorias…",
+    clearAll: "Limpar filtros",
+    close: "Fechar",
+    hintNavigate: "navegar",
+    hintOpen: "abrir",
+    footerTag: "Para todas as bibliotecas com personalidade",
+    footerFade: " — esperando para serem encontradas!",
     github: "Ver o código no GitHub",
     newTab: "abre em nova aba",
     preview: "Prévia do site",
@@ -81,6 +105,18 @@ export const DICTIONARIES: Record<Locale, Dictionary> = {
     searchLabel: "Search libraries",
     clear: "Clear search",
     empty: "No libraries found.",
+    latest: "Latest",
+    az: "A–Z",
+    shuffle: "Shuffle",
+    submit: "Submit a site",
+    searchOrFilter: "Search or filter",
+    searchPlaceholder: "Search libraries, categories…",
+    clearAll: "Clear all filters",
+    close: "Close",
+    hintNavigate: "navigate",
+    hintOpen: "open",
+    footerTag: "For all the libraries with personality",
+    footerFade: " — just waiting to be found!",
     github: "View the code on GitHub",
     newTab: "opens in a new tab",
     preview: "Preview of the site",
@@ -121,6 +157,18 @@ export const DICTIONARIES: Record<Locale, Dictionary> = {
     searchLabel: "Rechercher des bibliothèques",
     clear: "Effacer la recherche",
     empty: "Aucune bibliothèque trouvée.",
+    latest: "Récents",
+    az: "A–Z",
+    shuffle: "Aléatoire",
+    submit: "Proposer un site",
+    searchOrFilter: "Rechercher ou filtrer",
+    searchPlaceholder: "Rechercher des bibliothèques, catégories…",
+    clearAll: "Effacer les filtres",
+    close: "Fermer",
+    hintNavigate: "naviguer",
+    hintOpen: "ouvrir",
+    footerTag: "Pour toutes les bibliothèques avec du caractère",
+    footerFade: " — qui n’attendent qu’à être trouvées !",
     github: "Voir le code sur GitHub",
     newTab: "s'ouvre dans un nouvel onglet",
     preview: "Aperçu du site",
@@ -161,6 +209,18 @@ export const DICTIONARIES: Record<Locale, Dictionary> = {
     searchLabel: "Buscar bibliotecas",
     clear: "Borrar búsqueda",
     empty: "No se encontró ninguna biblioteca.",
+    latest: "Recientes",
+    az: "A–Z",
+    shuffle: "Aleatorio",
+    submit: "Enviar un sitio",
+    searchOrFilter: "Buscar o filtrar",
+    searchPlaceholder: "Buscar bibliotecas, categorías…",
+    clearAll: "Borrar filtros",
+    close: "Cerrar",
+    hintNavigate: "navegar",
+    hintOpen: "abrir",
+    footerTag: "Para todas las bibliotecas con personalidad",
+    footerFade: " — ¡esperando a ser encontradas!",
     github: "Ver el código en GitHub",
     newTab: "se abre en una pestaña nueva",
     preview: "Vista previa del sitio",

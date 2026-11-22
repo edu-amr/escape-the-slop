@@ -1,10 +1,10 @@
+import { FlowBackground } from "@/components/FlowBackground";
 import { GithubLink } from "@/components/GithubLink";
 import { LangSwitch } from "@/components/LangSwitch";
 import { LibCard } from "@/components/LibCard";
 import { LibGrid } from "@/components/LibGrid";
-import PixelBlast from "@/components/PixelBlast";
 import { DICTIONARIES } from "@/data/i18n";
-import { LIBS } from "@/data/libs";
+import { hostOf, LIBS } from "@/data/libs";
 import { AUTHOR, HTML_LANG, type Locale, SITE_NAME, SITE_URL, urlFor } from "@/lib/site";
 
 export function HubPage({ locale }: { locale: Locale }) {
@@ -50,74 +50,91 @@ export function HubPage({ locale }: { locale: Locale }) {
   };
 
   return (
-    <div className="relative isolate overflow-x-clip">
+    <div className="hub relative isolate">
       <div
         aria-hidden="true"
-        className="pointer-events-none absolute inset-x-0 top-0 -z-10 h-[440px] [mask-image:linear-gradient(to_bottom,black_70%,transparent)] opacity-40"
+        className="pointer-events-none absolute inset-x-0 top-0 -z-10 h-[820px] [mask-image:linear-gradient(to_bottom,black_60%,transparent)]"
       >
-        <PixelBlast
-          variant="square"
-          pixelSize={4}
-          color="#8ec5ff"
-          patternScale={2.4}
-          patternDensity={1}
-          speed={0.4}
-          edgeFade={0.1}
-          glow={0}
-          lightMode
-        />
+        <FlowBackground className="size-full" />
       </div>
-      <main className="relative w-full px-6 pt-6 pb-24 max-sm:px-4 min-[1600px]:px-10">
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{
-            __html: JSON.stringify(jsonLd).replace(/</g, "\\u003c"),
-          }}
-        />
-        <div className="flex items-center justify-between gap-3">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(jsonLd).replace(/</g, "\\u003c"),
+        }}
+      />
+      <LibGrid
+        dict={dict}
+        items={LIBS.map(({ slug, name, category, url }) => ({
+          slug,
+          name,
+          category,
+          url,
+          host: hostOf(url),
+        }))}
+        byline={
           <a
             href={AUTHOR.url}
             target="_blank"
             rel="noopener"
-            className="inline-flex items-center gap-2 rounded-full py-1 ps-1 pe-3 text-[14px] text-ink-secondary no-underline transition-colors duration-150 outline-none hover:text-ink focus-visible:outline-2 focus-visible:outline-focus"
+            className="inline-flex h-6 items-center gap-1.5 text-[12px] leading-none text-[var(--secondary)] no-underline transition-colors hover:text-[var(--primary)]"
           >
             <img
               src="/riivo-dog.webp"
               alt=""
               width={96}
               height={96}
-              className="size-7 max-w-none"
+              className="block size-6 max-w-none"
             />
-            <span>
-              {dict.by}: <span className="font-medium text-ink">riivo</span>
+            <span className="leading-none">
+              {dict.by}: <span className="font-medium text-[var(--primary)]">riivo</span>
             </span>
           </a>
-          <div className="flex items-center gap-2">
+        }
+        actions={
+          <>
             <GithubLink label={dict.github} />
             <LangSwitch locale={locale} dict={dict} />
-          </div>
-        </div>
-        <header className="mt-10 mb-10 max-sm:mt-8 max-sm:mb-7">
-          <h1 className="m-0 font-[family-name:var(--font-display)] text-[50px] leading-[0.95] font-black tracking-[-0.04em] text-ink sm:text-[70px]">
-            {dict.title}
-          </h1>
-          <p className="mt-3 max-w-[56ch] text-[17px] leading-6 text-ink-secondary">
-            {dict.lede}
-          </p>
-        </header>
-        <LibGrid
-          dict={dict}
-          items={LIBS.map(({ slug, name, category }) => ({
-            slug,
-            name,
-            category,
-          }))}
-        >
-          {LIBS.map((lib) => (
-            <LibCard key={lib.slug} lib={lib} dict={dict} />
-          ))}
-        </LibGrid>
-      </main>
+          </>
+        }
+        hero={
+          <header className="flex flex-col items-center gap-2 px-5 pt-14 pb-10 text-center sm:px-8 sm:pt-[4.5rem]">
+            <h1 className="m-0 font-[family-name:var(--font-display)] text-[38px] leading-[1] font-extrabold tracking-[-0.04em] text-balance sm:text-[64px]">
+              {dict.title}
+            </h1>
+            <p className="m-0 max-w-[44rem] text-[16px] leading-6 font-medium text-balance text-[var(--primary)]/70">
+              {dict.lede}
+            </p>
+          </header>
+        }
+        footer={
+          <footer className="mx-auto flex max-w-[120rem] flex-col gap-2 px-5 pt-12 pb-6 text-[12px] font-medium sm:px-8 md:flex-row md:items-center md:justify-between xl:px-12">
+            <p className="m-0">
+              <span className="text-[var(--secondary)]">{dict.footerTag}</span>
+              <span className="opacity-30">{dict.footerFade}</span>
+            </p>
+            <a
+              href={AUTHOR.url}
+              target="_blank"
+              rel="noopener"
+              className="inline-flex items-center gap-2 text-[var(--secondary)] no-underline transition-colors hover:text-[var(--primary)]"
+            >
+              <img
+                src="/riivo-dog.webp"
+                alt=""
+                width={96}
+                height={96}
+                className="size-6 max-w-none"
+              />
+              {dict.by} {AUTHOR.name}
+            </a>
+          </footer>
+        }
+      >
+        {LIBS.map((lib) => (
+          <LibCard key={lib.slug} lib={lib} dict={dict} />
+        ))}
+      </LibGrid>
     </div>
   );
 }

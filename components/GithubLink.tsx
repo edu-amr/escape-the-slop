@@ -13,18 +13,25 @@ export async function GithubLink({ label }: { label: string }) {
       rel="noopener"
       aria-label={label}
       title={label}
-      className="inline-flex h-9 items-center gap-2 rounded-full bg-ink/6 px-3 text-[13px] text-black transition-colors duration-150 outline-none hover:bg-ink/10 focus-visible:outline-2 focus-visible:outline-focus"
+      className="inline-flex h-[var(--btn-h)] cursor-pointer items-center gap-2 rounded-[var(--radius)] border border-[var(--tertiary)] bg-[var(--background)] px-3.5 text-[12px] font-medium whitespace-nowrap text-[var(--primary)] no-underline transition-[scale,border-color] duration-150 outline-none hover:border-[var(--secondary)] focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[var(--primary)] active:scale-[0.97]"
     >
       <svg
         viewBox="0 0 24 24"
-        width={18}
-        height={18}
+        width={17}
+        height={17}
         fill="currentColor"
         aria-hidden="true"
       >
         <path d={GITHUB_PATH} />
       </svg>
-      {stars !== null ? <span className="tabular-nums">{formatStars(stars)}</span> : null}
+      {stars !== null ? (
+        <span className="flex items-center gap-1 border-s border-[var(--tertiary)] ps-2 tabular-nums">
+          <span aria-hidden="true" className="text-[#e5a50a]">
+            ★
+          </span>
+          {formatStars(stars)}
+        </span>
+      ) : null}
     </a>
   );
 }

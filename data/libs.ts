@@ -660,6 +660,12 @@ export const LIBS: Lib[] = [
     url: "https://www.sacred.computer/",
     category: "components",
   },
+  {
+    slug: "dither-kit",
+    name: "dither-kit",
+    url: "https://www.tripwire.sh/dither-kit",
+    category: "charts",
+  },
 ];
 
 export const CATEGORY_KEYS: CategoryKey[] = [

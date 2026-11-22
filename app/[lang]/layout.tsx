@@ -4,6 +4,7 @@ import { Analytics } from "@vercel/analytics/next";
 import { SpeedInsights } from "@vercel/speed-insights/next";
 import { notFound } from "next/navigation";
 
+import { SmoothScroll } from "@/components/SmoothScroll";
 import { HTML_LANG, isLocale } from "@/lib/site";
 import { CrispChat } from "@/scripts/crisp-chat";
 
@@ -18,6 +19,7 @@ export default async function LangLayout({ children, params }: LayoutProps<"/[la
         {children}
         <Analytics />
         <SpeedInsights />
+        <SmoothScroll />
         <CrispChat />
       </body>
     </html>

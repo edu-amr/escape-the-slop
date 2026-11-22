@@ -462,6 +462,12 @@ export const LIBS: Lib[] = [
     url: "https://ingotui.com/templates",
     category: "blocks",
   },
+  {
+    slug: "zuris-ui",
+    name: "Zuris UI",
+    url: "https://zurisui.com/",
+    category: "components",
+  },
 ];
 
 export const CATEGORY_KEYS: CategoryKey[] = [

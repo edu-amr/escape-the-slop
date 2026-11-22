@@ -666,6 +666,12 @@ export const LIBS: Lib[] = [
     url: "https://www.tripwire.sh/dither-kit",
     category: "charts",
   },
+  {
+    slug: "dot-matrix",
+    name: "Dot Matrix",
+    url: "https://dotmatrix.zzzzshawn.cloud/",
+    category: "components",
+  },
 ];
 
 export const CATEGORY_KEYS: CategoryKey[] = [

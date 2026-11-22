@@ -672,6 +672,48 @@ export const LIBS: Lib[] = [
     url: "https://dotmatrix.zzzzshawn.cloud/",
     category: "components",
   },
+  {
+    slug: "free-faces",
+    name: "Free Faces",
+    url: "https://www.freefaces.gallery/",
+    category: "resources",
+  },
+  {
+    slug: "gooey",
+    name: "Gooey",
+    url: "https://libraries.dev/gooey",
+    category: "animations",
+  },
+  {
+    slug: "activeframe",
+    name: "ActiveFrame",
+    url: "https://github.com/activetheory/activeframe",
+    category: "resources",
+  },
+  {
+    slug: "taste-skill",
+    name: "Taste Skill",
+    url: "https://www.tasteskill.dev/",
+    category: "resources",
+  },
+  {
+    slug: "loaders-wtf",
+    name: "loaders.wtf",
+    url: "https://www.loaders.wtf/",
+    category: "animations",
+  },
+  {
+    slug: "shader-lab",
+    name: "Shader Lab",
+    url: "https://eng.basement.studio/tools/shader-lab",
+    category: "resources",
+  },
+  {
+    slug: "web-kits-audio",
+    name: "@web-kits/audio",
+    url: "https://audio.raphaelsalaja.com/",
+    category: "resources",
+  },
 ];
 
 export const CATEGORY_KEYS: CategoryKey[] = [

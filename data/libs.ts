@@ -432,6 +432,24 @@ export const LIBS: Lib[] = [
     url: "https://www.termcn.dev/",
     category: "components",
   },
+  {
+    slug: "designbookmark-motion",
+    name: "Design Bookmark Motion",
+    url: "https://designbookmark.com/motion",
+    category: "resources",
+  },
+  {
+    slug: "uiverse",
+    name: "Uiverse",
+    url: "https://uiverse.io/",
+    category: "components",
+  },
+  {
+    slug: "livekit-agents-ui",
+    name: "LiveKit Agents UI",
+    url: "https://docs.livekit.io/frontends/agents-ui/",
+    category: "components",
+  },
 ];
 
 export const CATEGORY_KEYS: CategoryKey[] = [

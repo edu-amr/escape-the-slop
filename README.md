@@ -81,7 +81,7 @@ Copie `.env.example` para `.env.local` para desenvolver. Na Vercel, defina a var
      slug: "minha-lib",          // kebab-case, único
      name: "Minha Lib",
      url: "https://minha-lib.dev/",
-     category: "components",     // components | blocks | animations | charts | icons | resources
+     category: "components",     // components | blocks | animations | charts | icons | inspiration | resources
      // wait: 9000,              // opcional: espera em ms para sites lentos
    },
    ```

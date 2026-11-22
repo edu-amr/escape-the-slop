@@ -1,5 +1,11 @@
 export type CategoryKey =
-  "components" | "blocks" | "animations" | "charts" | "icons" | "resources";
+  | "components"
+  | "blocks"
+  | "animations"
+  | "charts"
+  | "icons"
+  | "inspiration"
+  | "resources";
 
 export type Lib = {
   slug: string;
@@ -474,6 +480,174 @@ export const LIBS: Lib[] = [
     url: "https://dominikscholz.github.io/open-bot-avatar/",
     category: "resources",
   },
+  {
+    slug: "wobli",
+    name: "Wobli",
+    url: "https://wobli.space/",
+    category: "resources",
+  },
+  {
+    slug: "fontzz",
+    name: "Fontzz",
+    url: "https://fontzz.vercel.app/",
+    category: "resources",
+  },
+  {
+    slug: "craftui",
+    name: "craftUI",
+    url: "https://www.craftui.space/",
+    category: "blocks",
+  },
+  {
+    slug: "icona",
+    name: "Icona",
+    url: "https://icona.works/",
+    category: "icons",
+  },
+  {
+    slug: "looseleaf",
+    name: "Looseleaf",
+    url: "https://kevintngo.github.io/looseleaf/",
+    category: "components",
+  },
+  {
+    slug: "horizonx",
+    name: "HorizonX",
+    url: "https://horizonx.so/",
+    category: "resources",
+  },
+  {
+    slug: "oxyn",
+    name: "Oxyn",
+    url: "https://oxyn.space/",
+    category: "components",
+  },
+  {
+    slug: "kumo-ui",
+    name: "Kumo",
+    url: "https://kumo-ui.com/",
+    category: "components",
+  },
+  {
+    slug: "design-how",
+    name: "Design.how",
+    url: "https://design.how/",
+    category: "resources",
+  },
+  {
+    slug: "wunderui",
+    name: "WunderUI",
+    url: "https://wunderui.com/",
+    category: "components",
+  },
+  {
+    slug: "zoxilsi-studio",
+    name: "Zoxilsi Studio",
+    url: "https://studio.zoxilsi.cc/",
+    category: "resources",
+  },
+  {
+    slug: "illlustrations",
+    name: "Illlustrations",
+    url: "https://illlustrations.co/",
+    category: "resources",
+  },
+  {
+    slug: "branding-website",
+    name: "Branding Website",
+    url: "https://www.brandingwebsite.com/",
+    category: "inspiration",
+  },
+  {
+    slug: "calltoinspiration",
+    name: "CallToInspiration",
+    url: "https://calltoinspiration.com/",
+    category: "inspiration",
+  },
+  {
+    slug: "abtest-design",
+    name: "abtest.design",
+    url: "https://abtest.design/",
+    category: "inspiration",
+  },
+  {
+    slug: "adfolio",
+    name: "Adfolio",
+    url: "https://www.adfolio.design/",
+    category: "inspiration",
+  },
+  {
+    slug: "unsplash",
+    name: "Unsplash",
+    url: "https://unsplash.com/pt-br",
+    category: "resources",
+  },
+  {
+    slug: "pexels",
+    name: "Pexels",
+    url: "https://www.pexels.com/pt-br/",
+    category: "resources",
+  },
+  {
+    slug: "design-details",
+    name: "Design Details",
+    url: "https://designdetails.io/",
+    category: "inspiration",
+  },
+  {
+    slug: "space-ui",
+    name: "Space UI",
+    url: "https://www.spaceui.one/",
+    category: "components",
+  },
+  {
+    slug: "undraw",
+    name: "unDraw",
+    url: "https://undraw.co/",
+    category: "resources",
+  },
+  {
+    slug: "best-saas-web-designs",
+    name: "Best SaaS Web Designs",
+    url: "https://bestsaaswebdesigns.com/",
+    category: "inspiration",
+  },
+  {
+    slug: "khagwal-3d",
+    name: "Khagwal 3D",
+    url: "https://3d.khagwal.com/",
+    category: "resources",
+  },
+  {
+    slug: "pryzm",
+    name: "Pryzm",
+    url: "https://pryzm.design/",
+    category: "resources",
+  },
+  {
+    slug: "open-doodles",
+    name: "Open Doodles",
+    url: "https://opendoodles.com/",
+    category: "resources",
+  },
+  {
+    slug: "motionvideo",
+    name: "MotionVideo",
+    url: "https://motionvideo.xyz/pt",
+    category: "inspiration",
+  },
+  {
+    slug: "bklit-tanstack-charts",
+    name: "Bklit TanStack Charts",
+    url: "https://bklit-tanstack-charts-migration.vercel.app/",
+    category: "charts",
+  },
+  {
+    slug: "mebius-charts",
+    name: "Mebius Charts",
+    url: "https://www.mebius.design/freebies/charts",
+    category: "charts",
+  },
 ];
 
 export const CATEGORY_KEYS: CategoryKey[] = [
@@ -482,6 +656,7 @@ export const CATEGORY_KEYS: CategoryKey[] = [
   "animations",
   "charts",
   "icons",
+  "inspiration",
   "resources",
 ];
 

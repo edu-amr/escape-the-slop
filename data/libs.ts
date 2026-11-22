@@ -912,6 +912,18 @@ export const LIBS: Lib[] = [
     url: "https://www.drawably.dev/",
     category: "components",
   },
+  {
+    slug: "mockuuups-studio",
+    name: "Mockuuups Studio",
+    url: "https://mockuuups.studio/mockup-generator/free-mockups/",
+    category: "resources",
+  },
+  {
+    slug: "ls-graphics",
+    name: "LS Graphics",
+    url: "https://www.ls.graphics/free-mockups",
+    category: "resources",
+  },
 ];
 
 export const CATEGORY_KEYS: CategoryKey[] = [

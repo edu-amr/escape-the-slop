@@ -393,7 +393,7 @@ export const LIBS: Lib[] = [
   {
     slug: "interior",
     name: "Interior",
-    url: "https://www.interior.dev/docs",
+    url: "https://www.interior.dev",
     category: "components",
   },
   {
@@ -893,6 +893,24 @@ export const LIBS: Lib[] = [
     name: "Annnimate",
     url: "https://annnimate.com/",
     category: "animations",
+  },
+  {
+    slug: "forgegui",
+    name: "ForgeGUI",
+    url: "https://forgegui.com/",
+    category: "resources",
+  },
+  {
+    slug: "kobra",
+    name: "Kobra",
+    url: "https://kobra.systems/components/input-otp",
+    category: "components",
+  },
+  {
+    slug: "drawably",
+    name: "drawably",
+    url: "https://www.drawably.dev/",
+    category: "components",
   },
 ];
 

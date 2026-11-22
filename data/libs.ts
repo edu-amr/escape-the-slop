@@ -450,6 +450,12 @@ export const LIBS: Lib[] = [
     url: "https://docs.livekit.io/frontends/agents-ui/",
     category: "components",
   },
+  {
+    slug: "marked",
+    name: "Marked",
+    url: "https://marked.dev/",
+    category: "resources",
+  },
 ];
 
 export const CATEGORY_KEYS: CategoryKey[] = [
